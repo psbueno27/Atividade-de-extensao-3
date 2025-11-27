@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kick Shop</title>
+    <title>Kick Shop - Loja de Skates</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://ih1.redbubble.net/image.4972307877.7987/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" type="image/x-icon">
 </head>
 <body>
+
     <header>
-        <h1>Kick Shop</h1>
+        <h1>Mack Shop</h1>
         <p>Os melhores skates e peças para você fritar no asfalto!</p>
+
+        <!-- Botão do carrinho -->
+        <button class="btn-carrinho" onclick="abrirCarrinho()">🛒 Carrinho</button>
     </header>
 
     <nav>
@@ -20,49 +24,102 @@
         <a href="#">Rodas</a>
         <a href="#">Trucks</a>
         <a href="#">Rolamentos</a>
+        <a href="#">Lixas</a>
+        <a href="#">Parafusos</a>
     </nav>
 
     <div class="banner">Keep calm and skate!</div>
 
     <section class="produtos">
+
         <div class="card">
             <img src="https://m.magazineluiza.com.br/a-static/420x420/skate-profissional-completo-house-skateboarding-ate-110kg/houseskate/15910487477/f2c48bcd9c2d65e0b94ed007815682b8.jpeg" alt="Skate Completo">
             <h3>Skate Completo Pro</h3>
-            <p>Ideal para iniciantes e profissionais. Material resistente.</p>
-            <a href="#" class="btn-comprar">Comprar</a>
+            <h4>R$ 300,00</h4>
+            <p>Ideal para iniciantes e profissionais, com madeira reforçada e trucks de alta durabilidade.</p>
+            <a href="#" class="btn-comprar" onclick="adicionarCarrinho()">Comprar</a>
         </div>
 
         <div class="card">
             <img src="https://dreaminskates.com.br/cdn/shop/files/Shape-Maple-Canadense-importado-Blank-Puro-_Lizo.jpg?v=1725739228" alt="Shape de Skate">
             <h3>Shape Maple 7.0</h3>
+            <h4>R$ 230,00</h4>
             <p>Feito em 7 camadas de maple canadense.</p>
-            <a href="#" class="btn-comprar">Comprar</a>
+            <a href="#" class="btn-comprar" onclick="adicionarCarrinho()">Comprar</a>
         </div>
 
         <div class="card">
             <img src="https://http2.mlstatic.com/D_NQ_NP_867025-MLB85074751455_052025-O-roda-skate-tilt-street-52mm-97a-semi-profissional.webp" alt="Rodas de Skate">
             <h3>Rodas 52mm</h3>
+            <h4>R$ 113,00</h4>
             <p>Perfeitas para street, com dureza 101A.</p>
-            <a href="#" class="btn-comprar">Comprar</a>
+            <a href="#" class="btn-comprar" onclick="adicionarCarrinho()">Comprar</a>
         </div>
 
         <div class="card">
             <img src="https://acdn-us.mitiendanube.com/stores/002/907/587/products/truck-wood-light-logo1-f83e8fe57b481c46e216806207046714-1024-1024.webp" alt="Trucks">
             <h3>Trucks Pro Light</h3>
+            <h4>R$ 330,00</h4>
             <p>Durabilidade e leveza para máxima performance.</p>
-            <a href="#" class="btn-comprar">Comprar</a>
+            <a href="#" class="btn-comprar" onclick="adicionarCarrinho()">Comprar</a>
         </div>
 
         <div class="card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZdFUyLsbAy9mBCovs9RM0ixTC-88bIJZiig&s" alt="Rolamentos">
             <h3>Rolamentos ABEC-9</h3>
+            <h4>R$ 85,00</h4>
             <p>Alta velocidade e suavidade na rolagem.</p>
-            <a href="#" class="btn-comprar">Comprar</a>
+            <a href="#" class="btn-comprar" onclick="adicionarCarrinho()">Comprar</a>
         </div>
+
+        <div class="card">
+            <img src="https://acdn-us.mitiendanube.com/stores/087/236/products/rolamento-importado-reds-bones-949f10a7c23b74301e17562358354186-1024-1024.webp" alt="Rolamentos">
+            <h3>Rolamento Reds Bones</h3>
+            <h4>R$ 150,00</h4>
+            <p>Alta precisão, qualidade e durabilidade.</p>
+            <a href="#" class="btn-comprar" onclick="adicionarCarrinho()">Comprar</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.tcdn.com.br/img/img_prod/17375/skate_black_sheep_montado_completo_profissional_stick_abec_15_3321_1_20191207133107.jpg" alt="Skate">
+            <h3>Skate Black Sheep</h3>
+            <h4>R$ 488,00</h4>
+            <p>Skate Black Sheep Montado Completo Profissional Stick/Abec 15.</p>
+            <a href="#" class="btn-comprar" onclick="adicionarCarrinho()">Comprar</a>
+        </div>
+
+        <div class="card">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_880374-MLB89376915708_082025-O-lixa-grizzly-skate-bear-emborrachada-importada.webp" alt="Lixa">
+            <h3>Lixa Grizzly</h3>
+            <h4>R$ 74,00</h4>
+            <p>Lixa Grizzly Skate Bear Emborrachada Importada, lixa profissonal construída pensando na durabilidade e qualidade.</p>
+            <a href="#" class="btn-comprar" onclick="adicionarCarrinho()">Comprar</a>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT545xQdWOsAOmNyReWEqZt-YVyf4h3j9RoYQ&s" alt="Parafusos">
+            <h3>Parafusos Independent</h3>
+            <h4>R$ 48,00</h4>
+            <p>Parafusos de Base Skate Genuine Parts 7/8" Phillips Black/Red.</p>
+            <a href="#" class="btn-comprar" onclick="adicionarCarrinho()">Comprar</a>
+        </div>
+
     </section>
 
     <footer>
         <p>© 2025 Kick Shop - Todos os direitos reservados</p>
     </footer>
+
+    <!-- Script do carrinho -->
+    <script>
+        function adicionarCarrinho() {
+            alert("Produto adicionado ao carrinho!");
+        }
+
+        function abrirCarrinho() {
+            alert("Seu carrinho está vazio... por enquanto 😎");
+        }
+    </script>
+
 </body>
 </html>
