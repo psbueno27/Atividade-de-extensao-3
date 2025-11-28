@@ -14,3 +14,6 @@ Tipo de licença: Este repositório é de uso livre.
 
 `Link para o site:` https://kick-shop.onrender.com
 
+Atualização feita pela equipe.
+
+
